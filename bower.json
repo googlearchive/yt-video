@@ -1,0 +1,25 @@
+{
+  "name": "yt-video",
+  "version": "0.0.20131107",
+  "homepage": "https://github.com/Polymer/yt-video",
+  "authors": [
+    "The Polymer Authors"
+  ],
+  "description": "A youtube video element",
+  "main": "yt-video.html",
+  "keywords": [
+    "polymer"
+  ],
+  "license": "BSD",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
