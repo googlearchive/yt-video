@@ -8,12 +8,12 @@ license that can be found in the LICENSE file.
 <polymer-element name="yt-video" attributes="videoId videoEntry muted">
   <template>
     <style>
-      @host {
-        * {
-          background: url(assets/logo.png) no-repeat center;
-          display: block;
-          position: relative;
-        }
+      :host {
+        background-image: url(assets/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
       } 
     </style>
     <div id="container"></div>
@@ -68,7 +68,6 @@ license that can be found in the LICENSE file.
           } else {
             this.clearVideo();
           }
-          this.setAttribute('videoid', this.videoId);
         },
         videoEntryChanged: function() {
           if (this.videoEntry && this.videoEntry.media$group) {
@@ -82,7 +81,7 @@ license that can be found in the LICENSE file.
             loadYtApi(this);
             return;
           }
-          new YT.Player(this.$.container, {
+          this.player = new YT.Player(this.$.container, {
             height: '100%',
             width: '100%',
             events: {
