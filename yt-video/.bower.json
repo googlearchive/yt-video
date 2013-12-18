@@ -1,0 +1,34 @@
+{
+  "name": "yt-video",
+  "homepage": "https://github.com/Polymer/yt-video",
+  "authors": [
+    "The Polymer Authors"
+  ],
+  "description": "A youtube video element",
+  "main": "yt-video.html",
+  "keywords": [
+    "polymer"
+  ],
+  "license": "BSD",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "77e75b60df",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "77e75b60df57181f76b9bae7010b5a0d08520293"
+  },
+  "_source": "git://github.com/Polymer/yt-video.git",
+  "_target": "master",
+  "_originalSource": "Polymer/yt-video",
+  "_direct": true
+}
