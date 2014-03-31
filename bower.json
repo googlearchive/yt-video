@@ -12,7 +12,7 @@
   "license": "BSD",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#master"
+    "polymer": "Polymer/polymer#0.2.2"
   },
   "ignore": [
     "**/.*",
@@ -20,5 +20,6 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "version": "0.2.2"
 }
