@@ -59,11 +59,9 @@ license that can be found in the LICENSE file.
         },
         videoIdChanged: function() {
           if (this.videoId && this.videoId !== true) {
-            if (this.player) {
+            if (this.isPlayerReady) {
               this.playerNode.hidden = false;
-             this.player.loadVideoById(this.videoId);
-            } else {
-             this.createPlayer();
+              this.player.loadVideoById(this.videoId);
             }
           } else {
             this.clearVideo();
@@ -94,6 +92,7 @@ license that can be found in the LICENSE file.
           }
         },
         playerReady: function(e) {
+          this.isPlayerReady = true;
           this.player = e.target;
           this.playerNode.hidden = true;
           this.player.loadVideoById(this.videoId);
