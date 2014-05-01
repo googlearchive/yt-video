@@ -6,18 +6,28 @@ license that can be found in the LICENSE file.
 -->
 <html>
   <head>
-    <title>Youtube Video</title>
+    <title>Youtube Search Video</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="../platform/platform.js"></script>
-    <link rel="import" href="yt-video.html">
+    <link rel="import" href="yt-search-video.html">
     <style>
-      yt-video {
-        width: 500px;
-        height: 400px;
+      yt-search-video {
+        width: 400px;
+        height: 300px;
+      }
+
+      input {
+        margin: 10px;
       }
     </style>
   </head>
   <body unresolved>
-    <yt-video videoId="7r8NE4osAYA"></yt-video>
+    <input>
+    <yt-search-video></yt-search-video>
+    <script>
+      document.querySelector('input').addEventListener('change', function(e) {
+        document.querySelector('yt-search-video').ImFeelingLucky = e.target.value;
+      })
+    </script>
   </body>
 </html>
