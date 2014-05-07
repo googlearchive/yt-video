@@ -3,6 +3,6 @@
   "private": true,
   "dependencies": {
     "core-ajax": "Polymer/core-ajax#master",
-    "google-apis": "Polymer/google-apis#master"
+    "google-apis": "PolymerLabs/google-apis#master"
   }
 }
