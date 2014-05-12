@@ -2,7 +2,8 @@
   "name": "yt-video",
   "private": true,
   "dependencies": {
-    "core-ajax": "Polymer/core-ajax#master",
+    "core-ajax": "Polymer/core-ajax#0.2.4",
     "google-apis": "PolymerLabs/google-apis#master"
-  }
+  },
+  "version": "0.2.4"
 }
